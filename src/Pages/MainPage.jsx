@@ -3,20 +3,20 @@ import Doubts from '@/Components/Doubts'
 import Forraisefund from '@/Components/Forraisefund'
 import Heroimg from '@/Components/Heroimg'
 import Fotter from '@/Components/Fotter'
-import Navbar from '@/Components/Navbar'
+// import Navbar from '@/Components/Navbar'
    import Testimonial from '@/Components/Testimonial'
- 
+  
 const MainPage = () => {
     return (
         <>
-            <Navbar />
-            <Heroimg />
+            {/* <Navbar /> */}
+              <Heroimg />
             <Forraisefund />
             <Testimonial />
             <Choosecrowd />
             <Doubts />
             <Fotter />
-        </>
+         </>
     )
 }
 

@@ -30,7 +30,7 @@ const Activefund1 = () => {
             <button className="">donate now</button></div>
          </div>
 
-// 2nd part 
+{/* 2nd part */}
          <div className=" ">
             <h1 className=" ">Other donation method</h1>
             <hr/>
@@ -39,10 +39,10 @@ const Activefund1 = () => {
  <div className=" ">
     <div >
         <p> For Paytm </p>
-        <img src={} className=" "/>
+        {/* <img src={} className=" "/> */}
     </div>
     <div > For Other Apps
-        <img src={} className=""/>
+        {/* <img src={} className=""/> */}
     </div>
  </div>
  <div className=" ">
