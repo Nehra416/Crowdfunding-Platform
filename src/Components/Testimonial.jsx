@@ -16,6 +16,18 @@ const Testimonial = () => {
             city: "Mumbai Police",
             amount: " 9,57,401"
         },
+        {
+            quote: "We would urge anyone and everyone to extend their helping hand in betterment of a person who will continuously make this world a better place. Any contribution you make, big or small, will put us in your debt forever.",
+            name: "Constable Deepak Patil",
+            city: "Mumbai Police",
+            amount: " 9,57,401"
+        },
+        {
+            quote: "We would urge anyone and everyone to extend their helping hand in betterment of a person who will continuously make this world a better place. Any contribution you make, big or small, will put us in your debt forever.",
+            name: "Constable Deepak Patil",
+            city: "Mumbai Police",
+            amount: " 9,57,401"
+        },
     ]
 
     return (

@@ -51,15 +51,15 @@ const Activefund = () => {
   ];
 
   return (
-    <div className="px-4">
+    <div className="px-4 mx-[5vw] mb-20">
       <h1 className="text-3xl md:text-5xl text-center font-serif font-bold mt-10 md:mt-28">
         Active Fundraise
       </h1>
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mt-10">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mt-10 ">
         {activedata.map((item, index) => (
           <div
             key={index}
-            className="relative bg-white shadow-md rounded-lg overflow-hidden flex flex-col w-full max-w-sm mx-auto"
+            className="relative bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl border flex flex-col w-full max-w-sm mx-auto"
           >
             <img
               src={item.img}

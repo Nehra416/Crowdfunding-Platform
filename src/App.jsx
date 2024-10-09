@@ -1,30 +1,23 @@
 import './App.css'
- import Contact from './Pages/Contact'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-  // import Navbar from './Components/Navbar'
-import MainPage from './Pages/MainPage'
-import RaisingFundform from './Components/RaisingFundform'
-import FundraiserPage from './Components/FundraiserPage';
-import Navbar from './Components/Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainPage from './Pages/MainPage';
+import ContactPage from './Pages/ContactPage';
+import AboutPage from './Pages/AboutPage';
 import Raisefundform2 from './Components/Raisefundform2';
-import Fotter from './Components/Fotter';
-    
+import FoundPage from './Pages/FoundPage';
+
+
 function App() {
   return (
     <>
-      
-    <Router>
-      <Navbar/>
+      <Router>
         <Routes>
-        <Route path='/' element={<MainPage/>}/>
-        <Route path='/raiser' element={<RaisingFundform/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/about' element={<FundraiserPage/>}/>
-        <Route path='/login' element={<Raisefundform2/>}/>
-
-      </Routes>
-     </Router>
-     <Fotter/>    {/* <Navbar/> */}
+          <Route path="/" element={<MainPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/fund" element={<FoundPage />} />
+        </Routes>
+      </Router>
     </>
 
   )

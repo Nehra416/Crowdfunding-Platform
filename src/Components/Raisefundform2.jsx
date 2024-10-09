@@ -5,7 +5,7 @@ const Raisefundform2 = () => {
     name: '',
     email: '',
     phone: '',
-    fundUsage: ''
+    pwd: '',
   });
 
   const handleChange = (e) => {
@@ -21,19 +21,16 @@ const Raisefundform2 = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-100 rounded-lg shadow-lg max-w-lg mx-auto mt-24">
-      <div className="text-center mb-8">
-        <div className="mb-4 text-4xl font-bold">Logo</div>
-        <h1 className="text-2xl font-semibold text-gray-800">
-          Need Funds To Pay For Medical Bills/Treatment?
-        </h1>
+    <div className="px-6 pt-4 bg-gray-50 border rounded-lg shadow-lg w-full h-full mx-auto">
+      <div className="text-center">
+        <div className="mb-2 text-4xl font-bold">Logo</div>
         <h2 className="text-lg text-gray-600 mt-2">
-          Our personal fundraiser expert is waiting to get you started!
+          Signin to process further for the Fundraise
         </h2>
       </div>
 
       <div className="p-6 rounded-md">
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex flex-col items-center">
             <input
               type="text"
@@ -41,7 +38,7 @@ const Raisefundform2 = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full max-w-sm p-3 border-b-2 text-center focus:outline-none focus:border-b-green-400 bg-gray-100 rounded-md"
+              className="w-full max-w-sm p-3 border-b-2 text-center focus:outline-none focus:border-b-green-400 bg-gray-50 font-medium text-gray-500 rounded-md"
               placeholder="Enter your name"
               required
             />
@@ -54,7 +51,7 @@ const Raisefundform2 = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full max-w-sm p-3 border-b-2 text-center focus:outline-none focus:border-b-green-400 bg-gray-100 rounded-md"
+              className="w-full max-w-sm p-3 border-b-2 text-center focus:outline-none focus:border-b-green-400 bg-gray-50 font-medium text-gray-500 rounded-md"
               placeholder="Enter your email"
               required
             />
@@ -67,34 +64,33 @@ const Raisefundform2 = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full max-w-sm p-3 border-b-2 text-center focus:outline-none focus:border-b-green-400 bg-gray-100 rounded-md"
+              className="w-full max-w-sm p-3 border-b-2 text-center focus:outline-none focus:border-b-green-400 bg-gray-50 font-medium text-gray-500 rounded-md"
               placeholder="Enter your phone number"
               required
             />
           </div>
 
           <div className="flex flex-col items-center">
-            <select
-              id="fundUsage"
-              name="fundUsage"
-              value={formData.fundUsage}
+            <input
+              type="text"
+              id="pwd"
+              name="pwd"
+              value={formData.pwd}
               onChange={handleChange}
-              className="w-full max-w-sm p-3 border-b-2 text-center focus:outline-none focus:border-b-green-400 bg-gray-100 rounded-md"
+              className="w-full max-w-sm p-3 border-b-2 text-center focus:outline-none focus:border-b-green-400 bg-gray-50 font-medium text-gray-500 rounded-md"
+              placeholder="Enter your Password"
               required
-            >
-              <option value="">What Will the Funds Be Used For?</option>
-              <option value="Medical Bills">Medical Bills</option>
-              <option value="Treatment Costs">Treatment Costs</option>
-              <option value="Other">Other</option>
-            </select>
+            />
           </div>
 
           <button
             type="submit"
-            className=" w-full ml-3 max-w-sm p-4 bg-green-400 text-white rounded-md hover:bg-green-600"
+            className=" w-full ml-3 max-w-sm p-4 bg-teal-400 text-white rounded-md hover:bg-teal-500"
           >
             Submit
           </button>
+
+          <p className='text-center' >Don't have a Account? <span className='text-teal-500 hover:underline cursor-pointer'> Signup</span></p>6
         </form>
       </div>
     </div>

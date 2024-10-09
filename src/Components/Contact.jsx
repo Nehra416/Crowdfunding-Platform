@@ -1,17 +1,19 @@
-   import contact from '@/Components/images/contact.jpg'
-
+import React from 'react'
+import contact from '@/Components/images/contact.jpg'
+import { FaAngleDoubleDown } from "react-icons/fa";
 import { FaInstagram, FaLinkedinIn, FaSquareFacebook, FaWhatsapp, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 const Contact = () => {
     return (
-        <div>
-             <div className='relative '>
-                <img src={contact} alt="contact" className='h-[94vh] w-full ' />
+        <>
+            <div className='relative '>
+                <img src={contact} alt="contact" className='h-[93vh] w-full ' />
                 <div className='absolute top-[20vh] left-[10vw] max-w-[60vw]'>
                     <h1 className='text-6xl text-white font-bold mb-5'>Contact Us</h1>
-                    <p className='text-2xl text-white'>We are here to help you with any questions or concerns you might have. Please do not hesitate to reach out.</p>
+                    <p className='text-2xl text-white'>We're here to help you with any questions or concerns you might have. Please don't hesitate to reach out.</p>
                 </div>
             </div>
+            <p className='my-2 text-xl flex gap-4 items-center justify-center font-medium text-gray-500'>Scroll Down <span className='animate-bounce text-xl'><FaAngleDoubleDown /></span></p>
 
 
             <div className='mx-[10vw] mt-10'>
@@ -36,9 +38,7 @@ const Contact = () => {
                     <FaInstagram className='cursor-pointer hover:text-gray-400' />
                 </div>
             </div>
-
-          
-        </div>
+        </>
     )
 }
 

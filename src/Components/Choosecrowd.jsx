@@ -34,14 +34,14 @@ const Choosecrowd = () => {
   return (
     <div className="p-6 my-[7vh] bg-amber-50 min-h-screen flex items-center justify-center">
       <div className="max-w-4xl w-full">
-        <h1 className="text-2xl md:text-5xl font-serif font-bold mb-3 text-center mt-8">
+        <h1 className="text-2xl md:text-4xl font-serif font-bold mb-3 text-center mt-8">
           Why are people choosing medical crowdfunding?
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-36 mb-12 mt-24">
           {data.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center rounded-md shadow-lg hover:shadow-xl p-4 transition-shadow duration-300"
+              className="flex flex-col items-center rounded-md shadow-lg border hover:shadow-2xl cursor-pointer p-4 transition-shadow duration-300"
             >
               {item.icon && <div className="mr-4 text-primary">{item.icon}</div>}
               <div className="text-center">

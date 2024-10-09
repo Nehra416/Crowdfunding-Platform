@@ -34,7 +34,7 @@ const Offer = () => {
   ];
 
   return (
-    <div className="py-10 px-5 bg-gray-100">
+    <div className="py-10 px-5 bg-gray-100 mb-10">
       <h1 className="text-4xl font-bold  font-serif text-center mb-8">What Ketto Offers?</h1>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-20">
         {offerData.map((offer, index) => (

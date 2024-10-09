@@ -58,9 +58,9 @@ const Provide = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto p-4 mt-40">
-      <h1 className="text-3xl font-bold mb-8 text-center">We Provide Everything You Need</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
+    <div className="max-w-7xl text-center mx-[5vw] my-20">
+      <h1 className="text-3xl font-bold mb-16 text-center">We Provide Everything You Need</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
         {providedData.map((item, index) => (
           <div key={index} className="bg-white p-6 flex flex-col items-center">
             <img src={item.img} alt={item.name} className="w-20 h-20 mb-4" />

@@ -22,16 +22,16 @@ const About = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto p-4 mt-20">
+    <div className="my-20">
       <h1 className="text-3xl font-bold mb-4 text-center ">Medical Fundraising and Crowdfunding</h1>
-      <p className="text-lg text-center">
+      <p className="text-lg text-center mx-[5vw]">
         Medical crowdfunding is a convenient alternative for raising funds needed for expensive treatments like surgeries, NICU care, bone marrow transplants, cancer treatments, and other life-threatening conditions.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-40 mt-16">
         {aboutdata.map((item, index) => (
           <div
             key={index}
-            className={`bg-white p-6   flex flex-col sm:flex-row items-center ${
+            className={`bg-white p-6   flex flex-col sm:flex-row items-center justify-center gap-10 ${
               index % 2 === 0 ? "sm:flex-row-reverse" : ""
             }`}
           >
@@ -40,7 +40,7 @@ const About = () => {
               alt={item.h1}
               className=" h-80 mb-4 sm:mb-0 sm:ml-4 sm:mr-4"
             />
-            <div className="text-center  sm:text-left">
+            <div className="text-center sm:text-left">
               <h2 className="text-3xl font-semibold mb-2 tracking-wide">
                 {item.h1}
               </h2>

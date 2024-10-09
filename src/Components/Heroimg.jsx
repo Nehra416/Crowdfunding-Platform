@@ -10,7 +10,7 @@ const Heroimg = () => {
       />
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
         <div className="text-center px-4">
-          <h1 className="text-white font-mono text-2xl md:text-5xl -mt-20 font-bold">
+          <h1 className="text-white font-mono text-2xl md:text-5xl font-bold">
             Medical Crowdfunding is the <br />
             <span className="mt-4 inline-block">Best Way to Raise</span> <br />
             <span className="mt-4 inline-block">Money for Medical Expenses</span>
