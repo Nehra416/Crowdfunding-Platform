@@ -1,5 +1,4 @@
-import Fotter from '@/Components/Fotter'
-  import contact from '@/Components/images/contact.jpg'
+   import contact from '@/Components/images/contact.jpg'
 
 import { FaInstagram, FaLinkedinIn, FaSquareFacebook, FaWhatsapp, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
@@ -38,7 +37,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <Fotter />
+          
         </div>
     )
 }

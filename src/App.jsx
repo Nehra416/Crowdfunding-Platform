@@ -7,6 +7,7 @@ import RaisingFundform from './Components/RaisingFundform'
 import FundraiserPage from './Components/FundraiserPage';
 import Navbar from './Components/Navbar';
 import Raisefundform2 from './Components/Raisefundform2';
+import Fotter from './Components/Fotter';
     
 function App() {
   return (
@@ -22,8 +23,8 @@ function App() {
         <Route path='/login' element={<Raisefundform2/>}/>
 
       </Routes>
-    </Router>
-    {/* <Navbar/> */}
+     </Router>
+     <Fotter/>    {/* <Navbar/> */}
     </>
 
   )
